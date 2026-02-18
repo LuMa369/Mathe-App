@@ -10,7 +10,6 @@ function GoToE(Page) {
     }
 
 }
-
 function imE() {
   if (opend == false) {
     for (let i = 0; i < 7; i++) {
