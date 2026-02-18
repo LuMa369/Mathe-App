@@ -38,3 +38,80 @@ img{
     align-items: center;
     gap: 15px;
 }
+.IconMenu{
+    scale: 0.5;
+    padding: 20px;
+    background-color: rgb(33, 128, 216);
+    border: unset;
+    border-radius: 12px;
+    border: 2px solid black;
+    
+}
+.IconMenuEx{
+    scale: 0.5;
+    padding: 20px;
+    background-color: rgb(33, 128, 216);
+    border: unset;
+    border-radius: 12px;
+    border: 2px solid black;
+    opacity: 0;
+    animation: Apear 0.5s linear 0s 1 normal forwards;
+    animation-play-state: paused;
+}
+.BigMenu{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: unset;
+    background-color: rgb(58, 131, 150);
+    height: 145px;
+    animation: h 0.5s linear 0s 1 normal forwards;
+    animation-play-state: paused;
+}
+.Ex{
+    position: absolute;
+    top: 260px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: unset;
+    background-color: rgba(58, 132, 150, 0);
+    height: 500px;
+}
+#Menu{
+        animation: spin 0.5s linear 0s 1 normal forwards;
+        animation-play-state: paused;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg)
+    }
+}
+@keyframes h{
+    0%{
+        height: 145px;
+    }
+    50%{
+        height: 650px;
+    }
+    100%{
+        height: 650px;
+    }
+}
+@keyframes Apear{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
