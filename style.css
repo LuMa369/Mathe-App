@@ -1,0 +1,32 @@
+body{
+    font-family: "Open Sans",sans-serif;
+    width: 100%;
+    margin: 0;
+    height: 95vh;
+    background-color: rgb(72, 160, 182);
+    color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div{
+    margin-top: 30px;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    
+}
+.App{
+    height: 86px;
+    width: 86px;
+    background-color: black;
+    
+}
+.NameA{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}

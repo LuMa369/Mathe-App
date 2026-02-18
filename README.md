@@ -1,2 +1,2 @@
 # Mathe-App
-A litte app to help withe typical Math equations one might encounter 
+A little app to help with typical math equations one might encounter. This web app is a challenge to myself, as I have never really programmed with JS before. In the last few weeks, I tried to learn as much as I could. I have not yet done a project that I could really use in reality, even though I have programmed with Python before. This app is designed to work on an iPad, but there should be no problem using it somewhere  else. It is an app that should help you with often occurring math tasks (note: this will not be on a high level, as I am a beginner with JS), such as the quadratic formula, etc. 
