@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body id="bodyAbleitung">
      <h1>Ableitung Berechnen</h1>
      <div class="BigMenu"><button onclick="GoTo('../index')" class="IconMenu"><img src="../img/back.svg" ></button>
       <button class="IconMenu" id="Menu" onclick="imE()"><img class="lines" src="../img/menu.svg"></button>  </div>
@@ -19,7 +19,13 @@
         <button class="IconMenuEx" onclick="GoToE('Binom')" ><img class="lines" src="../img/Binom.svg"></button>
         <button class="IconMenuEx" onclick="GoToE('Graphen')" ><img class="lines" src="../img/Graph.svg"></button>
       </div>
-      
+      Grad deiner Funktion:
+      <input type="number" placeholder="Grad" id="grad"> <button onclick="Gradbestimmt()">Bestätigen</button>
+      <div class="Ableitung" id="EingabeAbleitung"></div>
+      <div class="Ableitung" id="ErsteABL"></div>
+      <div class="Ableitung" id="ZweiteABL"></div>
+      <div class="Ableitung" id="DritteABL"></div>
+
 
 
     <script src="../script.js"></script>
