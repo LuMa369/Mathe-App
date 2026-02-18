@@ -3,6 +3,13 @@ function GoTo(Page) {
   window.location.href = Page + ".html";
   opend = false;
 }
+function GoToE(Page) {
+    if(opend == true){
+          window.location.href = Page + ".html";
+        opend = false;
+    }
+
+}
 
 function imE() {
   if (opend == false) {
