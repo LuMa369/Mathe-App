@@ -66,25 +66,55 @@ function ABLBestimmen(){
   n = Number(grad.value);
   i = n-1;
   h = i+1;
+  ErsteABL.innerHTML = ""
+  ZweiteABL.innerHTML = ""
+  DritteABL.innerHTML = ""
   ErsteABL.innerHTML += "&#402;'(x)="
+  ZweiteABL.innerHTML += "&#402;''(x)="
+  DritteABL.innerHTML += "&#402;&sup3(x)="
     for (let i = n-1; i >= 0; i--) {
       h = i+1;
       ABL = document.getElementById(h);
-      alert(ABL.value);
     if(i == 0){
       ErsteABL.innerHTML += "<div class='funktion'>"+ ABL.value +"</div>";
     }else{
       if(i==1){
         ErsteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value +"x+</div>";
+        ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value +"</div>";
       }
       else if(i<=3){
+        if(i == 3){
+         ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value * i+"x&sup"+ (i-1) +";+</div>";
+         DritteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value *i*(i-1)+"x+</div>";
+        }else{
+          ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value * i+"x+</div>";
+          DritteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value *i*(i-1)+"</div>"; 
+        }
         ErsteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value +"x&sup"+ i +";+</div>";
+        
       }else if(i<=5) {
         num = i + 4;
+        if(i == 4){
+          ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value * i+"x&sup"+ (i-1) +";+</div>";
+        }else{
+          ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value * i+"x&#830"+ (num-1) +";+</div>";
+        }
         ErsteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value +"x&#830"+ num +";+</div>";
+        DritteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value *i*(i-1)+"x&sup"+ (i-2) +";+</div>";
       }else if(i<=9) {
         num = i + 4;
+        if(i == 6){
+          ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value * i+"x&#830"+ (num-1) +";+</div>";
+        }else{
+          ZweiteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value * i+"x&#83"+ (num-1) +";+</div>";
+        }
+        if(i < 8 ){
+          DritteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value *i*(i-1)+"x&#830"+ (num-2) +";+</div>";
+        }else{
+          DritteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value *i*(i-1)+"x&#83"+ (num-2) +";+</div>";
+        }
         ErsteABL.innerHTML += "<div class='funktion'>"+ h * ABL.value +"x&#83"+ num +";+</div>";
+        
       }
     
     }
