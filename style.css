@@ -1,3 +1,4 @@
+/*General*/
 body{
     font-family: "Open Sans",sans-serif;
     width: 100%;
@@ -18,6 +19,7 @@ div{
     gap: 90px;
     
 }
+/* Start Page */
 .App{
     height: 86px;
     width: 86px;
@@ -38,6 +40,7 @@ img{
     align-items: center;
     gap: 15px;
 }
+/* Quick Direkt */
 .IconMenu{
     scale: 0.5;
     padding: 20px;
@@ -84,6 +87,7 @@ img{
         animation: spin 0.5s linear 0s 1 normal forwards;
         animation-play-state: paused;
 }
+/* Ableitung */
 .Ableitung{
     display: flex;
     flex-wrap: wrap;
@@ -105,6 +109,46 @@ img{
 #bodyAbleitung{
     row-gap: 15px;
 }
+/* Mitternachtsformel */
+.ABCInput{
+    width: 80%;
+    gap: unset;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.InputABC{
+    width: 30px;
+}
+.TippEingab{
+    height: 40px;
+}
+.TextIcons{
+    height: 30px;
+    gap: unset;
+    margin: unset;
+}
+.okbutton{
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+
+}
+.Preview{
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#AwnserABC{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Animation */
+/* Quick Direkt */
 @keyframes spin{
     0%{
         transform: rotate(0);

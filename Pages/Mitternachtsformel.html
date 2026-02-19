@@ -19,6 +19,21 @@
         <button class="IconMenuEx" onclick="GoToE('Binom')" ><img class="lines" src="../img/Binom.svg"></button>
         <button class="IconMenuEx" onclick="GoToE('Graphen')" ><img class="lines" src="../img/Graph.svg"></button>
       </div>
+      Gebe die ABC werte ein:
+      <div class="TippEingab">Bedenke deine funktion muss sein: 0=ax&sup2;+bx+c</div>
+      <div class="ABCInput">
+        <div class="TextIcons"><label for="a">a=</label>
+        <input class="InputABC" type="text" id="a"></div>   
+        <div class="TextIcons"><label for="b">b=</label>
+        <input class="InputABC" type="text" id="b"></div>   
+        <div class="TextIcons"><label for="c">c=</label>
+        <input class="InputABC" type="text" id="c"></div>
+      </div>
+      <button class="okbutton" onclick="Xbestimmen()">Ok</button>
+      <div class="Preview">
+        <math display="block"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mrow><mo>−</mo><mi>b</mi></mrow><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mrow></math>
+      </div>
+      <div id="AwnserABC"></div>
       
 
 
