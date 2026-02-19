@@ -38,7 +38,9 @@ function imE() {
 //Ableitung
 function Gradbestimmt(){
   var n = Number(grad.value);
-  //grad.value = "";
+    ErsteABL.innerHTML = ""
+  ZweiteABL.innerHTML = ""
+  DritteABL.innerHTML = ""
   EingabeAbleitung.innerHTML = "";
   EingabeAbleitung.innerHTML += "&#402;(x)="
     for (let i = n; i >= 0; i--) {
@@ -119,4 +121,5 @@ function ABLBestimmen(){
     
     }
   }
+  grad.value = "";
 }
