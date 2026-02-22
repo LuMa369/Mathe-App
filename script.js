@@ -134,7 +134,7 @@ function Xbestimmen(){
   let b = document.getElementById("b").value;
   let c = document.getElementById("c").value;
   if(a==""){a=0} if(b==""){b=0} if(c==""){c=0}
-  UwUrzel = b**2 - 4*b*c;
+  UwUrzel = b**2 - 4*a*c;
   for(i = 0;i < 3; i++){
     Mitternachtsformel = Mitternachtsformel.replace("aE",a);
     Mitternachtsformel = Mitternachtsformel.replace("bE",b);
